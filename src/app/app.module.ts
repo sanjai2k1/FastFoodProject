@@ -14,7 +14,7 @@ import { NavbarComponent } from './Components/navbar/navbar.component';
 import { FooterComponent } from './Components/footer/footer.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { AboutusComponent } from './Components/aboutus/aboutus.component';
-import { ContactusComponent } from './Components/contactus/contactus.component';
+import { ContactUsComponent } from './Components/contactus/contactus.component';
 import { HomeComponent } from './Components/home/home.component';
 
 @NgModule({
@@ -25,7 +25,7 @@ import { HomeComponent } from './Components/home/home.component';
     NavbarComponent,
     FooterComponent,
     AboutusComponent,
-    ContactusComponent,
+    ContactUsComponent,
     HomeComponent
   ],
   imports: [
