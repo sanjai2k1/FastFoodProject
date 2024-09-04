@@ -1,0 +1,24 @@
+/* carousel.component.css */
+c-carousel {
+    position: relative;
+  }
+  
+  .carousel-image {
+    display: block;
+    margin: 0 auto; /* Centers the image horizontally */
+    height: 575px;   /* Fixed height */
+    width: 710px;    /* Fixed width */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+  }
+  
+  c-carousel-item {
+    text-align: center; /* Centers the content of the carousel item */
+  }
+  
+  c-carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: Semi-transparent background for better readability */
+    padding: 10px;
+    border-radius: 5px;
+    bottom: 20px; /* Adjust the position if needed */
+  }
+  

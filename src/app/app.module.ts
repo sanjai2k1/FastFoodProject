@@ -4,9 +4,11 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatButtonModule } from '@angular/material/button';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
+
+
 
 import { SignupComponent } from './Components/signup/signup.component';
 import { LoginComponent } from './Components/login/login.component';
@@ -16,6 +18,12 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { AboutusComponent } from './Components/aboutus/aboutus.component';
 import { ContactUsComponent } from './Components/contactus/contactus.component';
 import { HomeComponent } from './Components/home/home.component';
+import { Carousel06Component } from './Components/carousel06/carousel06.component';
+import { MdbCarouselModule } from 'mdb-angular-ui-kit/carousel';
+
+
+
+
 
 @NgModule({
   declarations: [
@@ -26,7 +34,9 @@ import { HomeComponent } from './Components/home/home.component';
     FooterComponent,
     AboutusComponent,
     ContactUsComponent,
-    HomeComponent
+    HomeComponent,
+  
+  
   ],
   imports: [
     BrowserModule,
@@ -34,8 +44,14 @@ import { HomeComponent } from './Components/home/home.component';
     ReactiveFormsModule,
     MatButtonModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+   
+    
+
+
+    
   ],
+
   providers: [
     provideClientHydration(),
     provideAnimationsAsync()

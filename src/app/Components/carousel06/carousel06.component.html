@@ -1,0 +1,19 @@
+<!-- carousel.component.html -->
+<c-carousel [dark]="true" [wrap]="true">
+  <c-carousel-inner>
+    <c-carousel-item *ngFor="let slide of slides; index as i" [class.active]="i === 0">
+      <img 
+        [src]="slide.src" 
+        [alt]="slide.title" 
+        class="carousel-image"
+        loading="lazy"
+      />
+      <c-carousel-caption class="d-none d-md-block">
+        <h3>{{slide.title}}</h3>
+        <p>{{slide.subtitle}}</p>
+      </c-carousel-caption>
+    </c-carousel-item>
+  </c-carousel-inner>
+  <c-carousel-control [direction]="'prev'" [caption]="'Previous'"></c-carousel-control>
+  <c-carousel-control [direction]="'next'" [caption]="'Next'"></c-carousel-control>
+</c-carousel>

@@ -1,31 +1,62 @@
+<nav class="navbar">
+    <div class="navbar-container">
+        <!-- Logo or Title -->
+        <div class="navbar-logo">Raayan Fast Foods</div>
+        
+        <!-- Navigation Links -->
+        <div class="navbar-links">
+            <a routerLink="/home">Home</a>
+            <a routerLink="#">Menu</a>
+            <a routerLink="/aboutus">About</a>
+            <a routerLink="/contactus">Contact Us</a>
+            <a routerLink="/signup">SignUp</a>
+            <a routerLink="/login">Login</a>
+        </div>
+        
+        <!-- Icons and Search Bar -->
+        <div class="navbar-icons">
+            <a routerLink="/favorites">
+                <i class="fas fa-heart"></i>
+            </a>
+            <a routerLink="/cart">
+                <i class="fas fa-shopping-cart"></i>
+            </a>
+            <input type="text" placeholder="Search...">
+        </div>
+    </div>
+</nav>
+
 <div class="signup-container">
     <h2>Sign Up</h2>
     <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
-    <div class="form-group">
-    <label for="name">Name</label>
-    <input id="name" formControlName="name" type="text" class="form-control" />
-    </div>
-    <div class="form-group">
-    <label for="dob">Date of Birth</label>
-    <input id="dob" formControlName="dob" type="date" class="form-control" />
-    </div>
-    <div class="form-group">
-        <label for="phno">ContactNo</label>
-        <input id="phno" formControlName="phno" type="text" class="form-control" />
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input id="name" formControlName="name" type="text" class="form-control" />
         </div>
-    <div class="form-group">
-    <label for="username">Username</label>
-    <input id="username" formControlName="username" type="text" class="form-control" />
-    </div>
-    <div class="form-group">
-    <label for="email">Email</label>
-    <input id="email" formControlName="email" type="email" class="form-control" />
-    </div>
-    <div class="form-group">
-    <label for="password">Password</label>
-    <input id="password" formControlName="password" type="password" class="form-control" />
-    </div>
-    <button type="submit" class="btn btn-primary">Sign Up</button>
+        <div class="form-group">
+            <label for="dob">Date of Birth</label>
+            <input id="dob" formControlName="dob" type="date" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label for="phno">ContactNo</label>
+            <input id="phno" formControlName="phno" type="text" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input id="username" formControlName="username" type="text" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input id="email" formControlName="email" type="email" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input id="password" formControlName="password" type="password" class="form-control" />
+        </div>
+        <button type="submit" class="btn btn-primary">Sign Up</button>
     </form>
-    </div>
-    
+</div>
+
+<footer style="position: fixed; bottom: 0; left: 0; width: 100%; background: #007bff; color: white; padding: 10px 20px; text-align: center;">
+    <p>&copy; 2024 Raayan Fast Foods. All rights reserved.</p>
+</footer>

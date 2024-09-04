@@ -1,20 +1,65 @@
-<div class="mar">
-<div class="contact-us-container">
-    <h1>Contact Us</h1>
-    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
-      <div class="form-group">
-        <label for="name">Name</label>
-        <input id="name" formControlName="name" type="text" class="form-control" />
-      </div>
-      <div class="form-group">
-        <label for="email">Email</label>
-        <input id="email" formControlName="email" type="email" class="form-control" />
-      </div>
-      <div class="form-group">
-        <label for="feedback">Feedback</label>
-        <textarea id="feedback" formControlName="feedback" class="form-control" rows="4"></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary">Send</button>
-    </form>
-  </div>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raayan Fast Foods</title>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <!-- Logo or Title -->
+            <div class="navbar-logo">Raayan Fast Foods</div>
+            
+            <!-- Navigation Links -->
+            <div class="navbar-links">
+                <a routerLink="/home">Home</a>
+                <a routerLink="/menu">Menu</a>
+                <a routerLink="/aboutus">About</a>
+                <a routerLink="/contactus">Contact Us</a>
+                <a routerLink="/signup">SignUp</a>
+                <a routerLink="/login">Login</a>
+            </div>
+            
+            <!-- Icons and Search Bar -->
+            <div class="navbar-icons">
+                <a routerLink="/favorites">
+                    <i class="fas fa-heart"></i>
+                </a>
+                <a routerLink="/cart">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+                <input type="text" placeholder="Search...">
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Us Section -->
+    <div class="contact-us-container">
+        <h1>Contact Us</h1>
+        <form>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input id="name" type="text" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input id="email" type="email" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label for="feedback">Feedback</label>
+                <textarea id="feedback" class="form-control" rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn">Send</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Raayan Fast Foods. All rights reserved.</p>
+    </footer>
+</body>
+</html>

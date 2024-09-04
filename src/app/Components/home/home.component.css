@@ -1,9 +1,92 @@
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     color: #333;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #007bff;
+    padding: 10px 20px;
+    color: white;
+    z-index: 1000;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.navbar-logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar-links {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.navbar-icons {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-icons a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.navbar-icons i {
+    font-size: 20px;
+}
+
+.navbar-icons input {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .navbar-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links {
+        justify-content: flex-start;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .navbar-links a {
+        margin: 5px 0;
+    }
+
+    .navbar-icons {
+        margin-top: 10px;
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .navbar-icons input {
+        width: 100%;
+    }
 }
 
 #hero {
@@ -36,6 +119,7 @@ body {
     background: #0056b3;
 }
 
+  
 #featured {
     padding: 50px;
     background: #fff;
@@ -46,31 +130,54 @@ body {
     font-size: 2rem;
 }
 
+/* Container for the cards */
 .card-group {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 20px auto;
+    max-width: 1200px;
 }
 
+/* Individual card styling */
 .card {
-    width: 30%;
-    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 400px; /* Set a fixed height for consistency */
+    box-sizing: border-box;
+}
+
+/* Image inside the card */
+.card img {
+    width: 100%;
+    height: 200px; /* Set a fixed height for images */
+    object-fit: cover; /* Ensure the image covers the container */
+    display: block;
+}
+
+/* Card title */
+.card h3 {
+    margin: 15px;
+    font-size: 1.5rem;
     text-align: center;
 }
 
-.card img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-.card h3 {
-    margin: 15px 0;
-}
-
+/* Card description */
 .card p {
+    margin: 0 15px 15px;
     font-size: 1rem;
+    color: #555;
+    text-align: center;
+    flex: 1; /* Allow text to take up remaining space */
 }
+
+
 
 #special-offers {
     padding: 50px;
@@ -121,6 +228,7 @@ body {
 .review p {
     margin: 0;
 }
+
 .product-card {
     text-align: center;
 }
@@ -130,4 +238,15 @@ body {
     height: 200px; 
     object-fit: cover; 
     border-radius: 8px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
 }

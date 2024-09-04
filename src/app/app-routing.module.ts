@@ -6,11 +6,13 @@ import { AboutusComponent } from './Components/aboutus/aboutus.component';
 import { ContactUsComponent } from './Components/contactus/contactus.component';
 import { HomeComponent } from './Components/home/home.component';
 
-const routes: Routes = [ {path:"home",component:HomeComponent},
-  {path:"login",component:LoginComponent},
+const routes: Routes = [{path:"",component:HomeComponent}, 
+{path:"home",component:HomeComponent},
+{path:"login",component:LoginComponent},
 {path:"signup",component:SignupComponent},
 {path:"aboutus",component:AboutusComponent},
 {path:"contactus",component:ContactUsComponent}
+
 
 
 
