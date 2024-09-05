@@ -19,7 +19,9 @@ import { AboutusComponent } from './Components/aboutus/aboutus.component';
 import { ContactUsComponent } from './Components/contactus/contactus.component';
 import { HomeComponent } from './Components/home/home.component';
 import { Carousel06Component } from './Components/carousel06/carousel06.component';
-import { MdbCarouselModule } from 'mdb-angular-ui-kit/carousel';
+
+import { CarotestComponent } from './Components/carotest/carotest.component';
+import { NgbCarouselModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 
@@ -35,6 +37,7 @@ import { MdbCarouselModule } from 'mdb-angular-ui-kit/carousel';
     AboutusComponent,
     ContactUsComponent,
     HomeComponent,
+    CarotestComponent,
   
   
   ],
@@ -45,6 +48,9 @@ import { MdbCarouselModule } from 'mdb-angular-ui-kit/carousel';
     MatButtonModule,
     MatFormFieldModule,
     MatInputModule,
+    NgbModule,
+  NgbCarouselModule
+    
    
     
 
@@ -58,4 +64,7 @@ import { MdbCarouselModule } from 'mdb-angular-ui-kit/carousel';
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+
+ 
+}

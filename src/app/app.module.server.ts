@@ -6,7 +6,7 @@ import { AppModule } from './app.module';
 @NgModule({
   imports: [
     AppModule,
-    ServerModule
+   
   ],
   bootstrap: [AppComponent]
 })

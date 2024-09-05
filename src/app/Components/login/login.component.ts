@@ -7,6 +7,11 @@ templateUrl: './login.component.html',
 styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
+    carouselItems = [
+        { image: 'assets/images/cb.jfif', alt: 'Image 1' },
+        { image: 'assets/images/cc.jfif', alt: 'Image 2' },
+        { image: 'assets/images/cl.jfif', alt: 'Image 3' }
+      ];
 loginForm: FormGroup;
 
 constructor(private fb: FormBuilder) {
